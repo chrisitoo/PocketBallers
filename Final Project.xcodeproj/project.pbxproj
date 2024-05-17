@@ -15,7 +15,7 @@
 		2744D1F62BE29C2100A75F6C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2744D1F52BE29C2100A75F6C /* SearchViewController.swift */; };
 		2744D1F82BE29C4400A75F6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2744D1F72BE29C4400A75F6C /* ProfileViewController.swift */; };
 		2757883A2BD98737002ED81F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275788392BD98737002ED81F /* HomeViewController.swift */; };
-		2757883C2BD98E6A002ED81F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757883B2BD98E69002ED81F /* Player.swift */; };
+		2757883C2BD98E6A002ED81F /* PlayerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757883B2BD98E69002ED81F /* PlayerInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		2744D1F52BE29C2100A75F6C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2744D1F72BE29C4400A75F6C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		275788392BD98737002ED81F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		2757883B2BD98E69002ED81F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2757883B2BD98E69002ED81F /* PlayerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				272A7EA52BBE384A0078B517 /* Assets.xcassets */,
 				272A7EA72BBE384A0078B517 /* LaunchScreen.storyboard */,
 				272A7EA22BBE38470078B517 /* Main.storyboard */,
-				2757883B2BD98E69002ED81F /* Player.swift */,
+				2757883B2BD98E69002ED81F /* PlayerInfo.swift */,
 				272A7EAA2BBE384A0078B517 /* Info.plist */,
 			);
 			path = "Final Project";
@@ -156,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2744D1F62BE29C2100A75F6C /* SearchViewController.swift in Sources */,
-				2757883C2BD98E6A002ED81F /* Player.swift in Sources */,
+				2757883C2BD98E6A002ED81F /* PlayerInfo.swift in Sources */,
 				2757883A2BD98737002ED81F /* HomeViewController.swift in Sources */,
 				272A7E9D2BBE38470078B517 /* AppDelegate.swift in Sources */,
 				2744D1F82BE29C4400A75F6C /* ProfileViewController.swift in Sources */,
