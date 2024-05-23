@@ -13,14 +13,27 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     var playerResponse: Response?
+    @IBOutlet weak var homeScreenLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    var downloadTask: URLSessionDownloadTask?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         
+        let nib = UINib(nibName: "PlayerTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "PlayerTableViewCell")
+        
+        FetchTopScorers()
+        
+        
+    }
+    
+    
+   
+    func FetchTopScorers() {
         let url = URL(string:"https://v3.football.api-sports.io/players/topscorers?league=140&season=2023")!
         var request = URLRequest(url: url)
         request.addValue("4fc176f9aa1841a75a883276b9a18aee", forHTTPHeaderField: "x-apisports-key")
@@ -45,7 +58,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }
         dataTask.resume()
-        
     }
     
     func parse(data:Data) -> Response? {
@@ -58,6 +70,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             return nil
         }
     }
+    
+    
     
     enum FootyError: Error {
         case invalidURL
@@ -72,12 +86,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeItem" , for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerTableViewCell" , for: indexPath) as! PlayerTableViewCell
        
-        var cellContent = cell.defaultContentConfiguration()
-    
-        cellContent.text = playerResponse?.response[indexPath.row].player.name
-        cell.contentConfiguration = cellContent
+        if let player = playerResponse?.response[indexPath.row].player {
+            cell.playerNameLabel.text = player.name
+            
+            let url = playerResponse?.response[indexPath.row].player.photo
+            
+            downloadTask = cell.playerImageView.loadImage(url: url!)
+                        
+        }
         
         return cell
     }
@@ -92,4 +111,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     */
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let selectedFootballer = playerResponse?.response[indexPath.row]
+        performSegue(withIdentifier: "toPlayerOverview", sender: selectedFootballer?.player.id)
+        
+        
+        
+        print(selectedFootballer?.player.id ?? 0)
+    }
 }

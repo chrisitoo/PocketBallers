@@ -16,6 +16,10 @@
 		2744D1F82BE29C4400A75F6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2744D1F72BE29C4400A75F6C /* ProfileViewController.swift */; };
 		2757883A2BD98737002ED81F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275788392BD98737002ED81F /* HomeViewController.swift */; };
 		2757883C2BD98E6A002ED81F /* PlayerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757883B2BD98E69002ED81F /* PlayerInfo.swift */; };
+		277BE7FB2BFF004100A6B859 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277BE7FA2BFF004100A6B859 /* Extensions.swift */; };
+		277BE8002BFF091200A6B859 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277BE7FE2BFF091200A6B859 /* PlayerTableViewCell.swift */; };
+		277BE8012BFF091200A6B859 /* PlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277BE7FF2BFF091200A6B859 /* PlayerTableViewCell.xib */; };
+		27A3987F2BF72F1500D26D7C /* PlayerOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A3987E2BF72F1500D26D7C /* PlayerOverviewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		2744D1F72BE29C4400A75F6C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		275788392BD98737002ED81F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2757883B2BD98E69002ED81F /* PlayerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfo.swift; sourceTree = "<group>"; };
+		277BE7FA2BFF004100A6B859 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		277BE7FE2BFF091200A6B859 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerTableViewCell.swift; path = "Final Project/PlayerTableViewCell.swift"; sourceTree = "<group>"; };
+		277BE7FF2BFF091200A6B859 /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayerTableViewCell.xib; path = "Final Project/PlayerTableViewCell.xib"; sourceTree = "<group>"; };
+		27A3987E2BF72F1500D26D7C /* PlayerOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOverviewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,8 @@
 		272A7E902BBE38470078B517 = {
 			isa = PBXGroup;
 			children = (
+				277BE7FE2BFF091200A6B859 /* PlayerTableViewCell.swift */,
+				277BE7FF2BFF091200A6B859 /* PlayerTableViewCell.xib */,
 				272A7E9B2BBE38470078B517 /* Final Project */,
 				272A7E9A2BBE38470078B517 /* Products */,
 			);
@@ -65,6 +75,7 @@
 				27E763512BD1A7C000CE5140 /* ViewControllers */,
 				272A7E9C2BBE38470078B517 /* AppDelegate.swift */,
 				272A7E9E2BBE38470078B517 /* SceneDelegate.swift */,
+				277BE7FA2BFF004100A6B859 /* Extensions.swift */,
 				272A7EA52BBE384A0078B517 /* Assets.xcassets */,
 				272A7EA72BBE384A0078B517 /* LaunchScreen.storyboard */,
 				272A7EA22BBE38470078B517 /* Main.storyboard */,
@@ -80,6 +91,7 @@
 				275788392BD98737002ED81F /* HomeViewController.swift */,
 				2744D1F52BE29C2100A75F6C /* SearchViewController.swift */,
 				2744D1F72BE29C4400A75F6C /* ProfileViewController.swift */,
+				27A3987E2BF72F1500D26D7C /* PlayerOverviewVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -142,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277BE8012BFF091200A6B859 /* PlayerTableViewCell.xib in Resources */,
 				272A7EA92BBE384A0078B517 /* LaunchScreen.storyboard in Resources */,
 				272A7EA62BBE384A0078B517 /* Assets.xcassets in Resources */,
 				272A7EA42BBE38470078B517 /* Main.storyboard in Resources */,
@@ -158,7 +171,10 @@
 				2744D1F62BE29C2100A75F6C /* SearchViewController.swift in Sources */,
 				2757883C2BD98E6A002ED81F /* PlayerInfo.swift in Sources */,
 				2757883A2BD98737002ED81F /* HomeViewController.swift in Sources */,
+				277BE7FB2BFF004100A6B859 /* Extensions.swift in Sources */,
+				27A3987F2BF72F1500D26D7C /* PlayerOverviewVC.swift in Sources */,
 				272A7E9D2BBE38470078B517 /* AppDelegate.swift in Sources */,
+				277BE8002BFF091200A6B859 /* PlayerTableViewCell.swift in Sources */,
 				2744D1F82BE29C4400A75F6C /* ProfileViewController.swift in Sources */,
 				272A7E9F2BBE38470078B517 /* SceneDelegate.swift in Sources */,
 			);
