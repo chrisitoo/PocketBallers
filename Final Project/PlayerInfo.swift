@@ -66,7 +66,7 @@ struct League: Codable {
     let name: String
     let country: String
     let logo: URL
-    let flag: URL
+    let flag: URL?
     let season: Int
 }
 
@@ -95,7 +95,7 @@ struct Shots: Codable {
 struct Goals: Codable {
     let total: Int?
     let conceded: Int?
-    let assists: Int
+    let assists: Int?
     let saves: Int?
 }
 
@@ -141,4 +141,11 @@ struct Penalty: Codable {
     let saved: Int?
 }
 
+
+struct PlayerCreds {
+    let playerID: Int
+    let leagueID: Int
+    let season: Int
+    let teamID: Int
+}
 

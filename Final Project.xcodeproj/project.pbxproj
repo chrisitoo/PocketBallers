@@ -35,8 +35,8 @@
 		275788392BD98737002ED81F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2757883B2BD98E69002ED81F /* PlayerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfo.swift; sourceTree = "<group>"; };
 		277BE7FA2BFF004100A6B859 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		277BE7FE2BFF091200A6B859 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerTableViewCell.swift; path = "Final Project/PlayerTableViewCell.swift"; sourceTree = "<group>"; };
-		277BE7FF2BFF091200A6B859 /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayerTableViewCell.xib; path = "Final Project/PlayerTableViewCell.xib"; sourceTree = "<group>"; };
+		277BE7FE2BFF091200A6B859 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		277BE7FF2BFF091200A6B859 /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTableViewCell.xib; sourceTree = "<group>"; };
 		27A3987E2BF72F1500D26D7C /* PlayerOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOverviewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,8 +54,6 @@
 		272A7E902BBE38470078B517 = {
 			isa = PBXGroup;
 			children = (
-				277BE7FE2BFF091200A6B859 /* PlayerTableViewCell.swift */,
-				277BE7FF2BFF091200A6B859 /* PlayerTableViewCell.xib */,
 				272A7E9B2BBE38470078B517 /* Final Project */,
 				272A7E9A2BBE38470078B517 /* Products */,
 			);
@@ -81,6 +79,8 @@
 				272A7EA22BBE38470078B517 /* Main.storyboard */,
 				2757883B2BD98E69002ED81F /* PlayerInfo.swift */,
 				272A7EAA2BBE384A0078B517 /* Info.plist */,
+				277BE7FF2BFF091200A6B859 /* PlayerTableViewCell.xib */,
+				277BE7FE2BFF091200A6B859 /* PlayerTableViewCell.swift */,
 			);
 			path = "Final Project";
 			sourceTree = "<group>";

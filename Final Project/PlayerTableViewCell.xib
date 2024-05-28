@@ -4,30 +4,47 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlayerTableViewCell" customModule="Final_Project" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="PlayerTableViewCell" customModule="Final_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q0e-OM-HIQ">
-                        <rect key="frame" x="197" y="0.0" width="107" height="44"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="         Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GM-dq-gF2">
-                        <rect key="frame" x="6" y="12" width="117" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GM-dq-gF2">
+                        <rect key="frame" x="0.0" y="40" width="177" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9Q6-j3-Q4U"/>
+                            <constraint firstAttribute="width" constant="177" id="QKV-Hw-568"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" systemColor="secondarySystemBackgroundColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q0e-OM-HIQ">
+                        <rect key="frame" x="206" y="8" width="98" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="98" id="lR9-dy-N4o"/>
+                            <constraint firstAttribute="height" constant="84" id="vhX-QJ-yH0"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="0GM-dq-gF2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-71.5" id="3FT-gj-Pxy"/>
+                    <constraint firstItem="q0e-OM-HIQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="438-Qs-qZ3"/>
+                    <constraint firstItem="q0e-OM-HIQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6km-Cv-PU0"/>
+                    <constraint firstAttribute="bottom" secondItem="q0e-OM-HIQ" secondAttribute="bottom" constant="8" id="Azd-Bp-w4x"/>
+                    <constraint firstItem="q0e-OM-HIQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="95" id="Dbv-r3-JRd"/>
+                    <constraint firstAttribute="trailing" secondItem="q0e-OM-HIQ" secondAttribute="trailing" constant="16" id="ZSU-ry-ZMw"/>
+                    <constraint firstItem="0GM-dq-gF2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cZl-g8-J0b"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
@@ -37,4 +54,12 @@
             <point key="canvasLocation" x="138.93129770992365" y="20.422535211267608"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
